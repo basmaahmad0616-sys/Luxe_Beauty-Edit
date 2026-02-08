@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxebeauty | Top Beauty Picks</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Luxebeauty: Carefully selected beauty products including skincare, makeup, and hair tools. Honest picks with Amazon affiliate links.">
+  <meta name="keywords" content="beauty products, skincare, makeup, amazon affiliate, Luxebeauty">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+    body { background: #f8f8f2; color: #333; line-height:1.6; }
+
+    /* Header */
+    header { background: linear-gradient(135deg,#A8E6CF,#D0F0C0); color:#333; text-align:center; padding:40px 20px; }
+    header h1 { font-size:2.5rem; margin-bottom:10px; }
+    header p { font-size:1rem; opacity:0.9; }
+
+    /* Navigation Filter */
+    nav { background:#fff; text-align:center; padding:15px; box-shadow:0 2px 5px rgba(0,0,0,0.05); margin-bottom:30px; }
+    nav button { border:none; background:#A8E6CF; color:#333; padding:10px 18px; margin:5px; border-radius:20px; cursor:pointer; font-size:0.9rem; transition:0.3s; }
+    nav button:hover { background:#8ED1B2; }
+
+    /* Product Grid */
+    .container { max-width:1200px; margin:auto; padding:0 15px; display:grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:25px; }
+    .product { background:#fff; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); overflow:hidden; transition:transform 0.3s ease; }
+    .product:hover { transform: translateY(-6px); }
+    .product img { width:100%; height:230px; object-fit:cover; }
+    .product-content { padding:15px; }
+    .product-content h3 { font-size:1.1rem; margin-bottom:8px; }
+    .product-content p { font-size:0.9rem; color:#555; margin-bottom:12px; }
+    .product-content a { display:block; text-align:center; background:#A8E6CF; color:#333; text-decoration:none; padding:10px; border-radius:6px; font-weight:bold; transition:0.3s; }
+    .product-content a:hover { background:#8ED1B2; }
+
+    /* Sections */
+    section { margin-bottom:50px; }
+
+    /* About & Contact */
+    #about, #contact { max-width:800px; margin:50px auto; background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); }
+    #about h2, #contact h2 { margin-bottom:15px; color:#333; }
+    #about p, #contact p { color:#555; line-height:1.5; }
+    #contact form { display:flex; flex-direction:column; }
+    #contact input, #contact textarea { padding:10px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; }
+    #contact button { background:#A8E6CF; color:#333; border:none; padding:10px; border-radius:6px; cursor:pointer; font-weight:bold; }
+    #contact button:hover { background:#8ED1B2; }
+
+    /* Footer */
+    footer { background:#222; color:#ccc; text-align:center; padding:25px 15px; font-size:0.85rem; }
+    footer p { max-width:800px; margin:auto; }
+
+    @media(max-width:600px){ header h1{font-size:2rem;} }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Luxebeauty</h1>
+  <p>Top beauty picks – skincare, makeup & hair tools 💄✨</p>
+</header>
+
+<nav>
+  <button onclick="filterProducts('all')">All</button>
+  <button onclick="filterProducts('skincare')">Skincare</button>
+  <button onclick="filterProducts('makeup')">Makeup</button>
+  <button onclick="filterProducts('hair')">Hair</button>
+</nav>
+
+<section class="container">
+  <div class="product skincare">
+    <img src="images/product1.jpg" alt="Vitamin C Serum">
+    <div class="product-content">
+      <h3>Vitamin C Face Serum</h3>
+      <p>Brightens skin and reduces dark spots.</p>
+      <a href="#" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+
+  <div class="product skincare">
+    <img src="images/product2.jpg" alt="Hyaluronic Serum">
+    <div class="product-content">
+      <h3>Hyaluronic Acid Serum</h3>
+      <p>Hydrates skin for a youthful glow.</p>
+      <a href="#" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+
+  <div class="product makeup">
+    <img src="images/product3.jpg" alt="Matte Lipstick">
+    <div class="product-content">
+      <h3>Matte Lipstick Set</h3>
+      <p>Long-lasting, vibrant shades.</p>
+      <a href="#" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+
+  <div class="product makeup">
+    <img src="images/product4.jpg" alt="Makeup Brushes">
+    <div class="product-content">
+      <h3>Professional Brush Set</h3>
+      <p>Soft, durable brushes for flawless blending.</p>
+      <a href="#" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+
+  <div class="product hair">
+    <img src="images/product5.jpg" alt="Hair Dryer">
+    <div class="product-content">
+      <h3>Ionic Hair Dryer</h3>
+      <p>Fast drying with heat protection technology.</p>
+      <a href="#" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+
+  <div class="product hair">
+    <img src="images/product6.jpg" alt="Hair Straightener">
+    <div class="product-content">
+      <h3>Ceramic Hair Straightener</h3>
+      <p>Smooth, shiny hair in minutes.</p>
+      <a href="#" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+
+  <div class="product skincare">
+    <img src="images/product7.jpg" alt="Face Mask">
+    <div class="product-content">
+      <h3>Revitalizing Face Mask</h3>
+      <p>Deep cleans and nourishes skin.</p>
+      <a href="#" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+
+  <div class="product makeup">
+    <img src="images/product8.jpg" alt="Eyeshadow Palette">
+    <div class="product-content">
+      <h3>Eyeshadow Palette</h3>
+      <p>Neutral and bold shades for every look.</p>
+      <a href="#" target="_blank">Buy on Amazon</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Welcome to Luxebeauty! We carefully select the best beauty products to help you look and feel your best. Our picks are honest and designed to simplify your shopping experience.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>If you have questions or suggestions, feel free to reach out using the form below:</p>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>As an Amazon Associate, I earn from qualifying purchases. Luxebeauty shares honest beauty recommendations to help you choose the best products.</p>
+</footer>
+
+<script>
+  function filterProducts(category){
+    const products = document.querySelectorAll('.product');
+    products.forEach(product=>{
+      if(category==='all'||product.classList.contains(category)){
+        product.style.display='block';
+      } else { product.style.display='none'; }
+    });
+  }
+</script>
+
+</body>
+</html>
